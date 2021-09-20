@@ -1,11 +1,13 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet ,Dimensions , StatusBar} from 'react-native';
+import Constants from "expo-constants"
+
 
 const styles = StyleSheet.create({
 
 
     carContainer :{
         width: '100%',
-        height: '100%',
+        height: Dimensions.get('window').height,
     },
   
     titles: {
@@ -30,6 +32,7 @@ const styles = StyleSheet.create({
     image :{
       width: '100%',
       height: '100%',
+      
       resizeMode : 'cover',
       position: 'absolute',
     },
